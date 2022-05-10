@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Poppins&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins' ;
+}
+
+body{
+
+    overflow: hidden;
+
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient( to top right,
+    rgb(233, 46, 64), rgb(46, 199, 255) );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#main{
+    width: 350px;
+    height: 500px;
+    border-radius: 7px;
+    border-top: 2px solid rgba(255, 255, 255, 0.25);
+    border-left: 2px solid rgba(255, 255, 255, 0.25);
+
+    background-color: rgba(255, 255, 255, 0.17);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.058);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.display-container{
+    width: 300px;
+    height: 100px;
+    border: 2px solid white;
+    margin: 10px;
+    border-radius: 7px;
+}
+.button-container{
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+.bubbles{
+    width: 100%;
+
+    position: absolute;
+    bottom: -50px;
+    z-index: -1;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.bubbles span{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+
+    backdrop-filter: blur(5px);
+
+    animation-name: move ;
+    animation-duration:20s ;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite ;
+}
+
+.bubbles span.one{
+    animation-delay: 0s;
+}
+.bubbles span.two{
+    animation-delay: 15s;
+}
+.bubbles span.three{
+    animation-delay: 6s;
+}
+.bubbles span.four{
+    animation-delay: 12s;
+}
+.bubbles span.five{
+    animation-delay: 10s;
+}
+.bubbles span.six{
+    animation-delay: 8s;
+}
+.bubbles span.seven{
+    animation-delay: 2s;
+}
+
+@keyframes move {
+
+    100%{
+        transform: translateY(-110vh);
+    }
+}
