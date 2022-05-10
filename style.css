@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Megrim&family=Poppins&display=swap');
 
+/* ! commmon to all */
 *{
     margin: 0px;
     padding: 0px;
@@ -22,6 +23,7 @@ body{
 
 }
 
+/* ! styling main-section */
 #main{
     width: 350px;
     height: 500px;
@@ -53,6 +55,9 @@ body{
     border-radius: 7px;
 }
 
+
+
+/* ! animation */
 .bubbles{
     width: 100%;
 
