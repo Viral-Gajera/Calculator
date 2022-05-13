@@ -85,6 +85,8 @@ body{
 
     text-align: right;
     background-color: transparent;
+
+    overflow: auto;
 }
 
 /* ! formating buttons  */

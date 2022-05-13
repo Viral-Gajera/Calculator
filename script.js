@@ -61,11 +61,12 @@ add.addEventListener( 'click', addContent );
 
 eql.addEventListener('click', function(){
     let string = answer.value
-    if( string.isInteger ){
-        console.log('integer');
-    }
-    let evalution = eval(string);
-    answer.value = Number(evalution).toFixed(5);
+    
+    // let evalution = eval(string);
+    // answer.value = Number(evalution).toFixed(5);
+
+    answer.value = eval(string);
+
 });
 
 AC.addEventListener('click', function(){
