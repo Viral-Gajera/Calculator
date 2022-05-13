@@ -61,12 +61,7 @@ add.addEventListener( 'click', addContent );
 
 eql.addEventListener('click', function(){
     let string = answer.value
-    
-    // let evalution = eval(string);
-    // answer.value = Number(evalution).toFixed(5);
-
     answer.value = eval(string);
-
 });
 
 AC.addEventListener('click', function(){
@@ -78,12 +73,3 @@ DEL.addEventListener('click', function(){
     let lenght = String(answer.value).length
     answer.value = answer.value.substring(0, lenght-1)
 });
-
-// main.addEventListener( 'keypress', function(event){
-//     if( String(event.key) === 'Enter' ){
-//         let string = String(answer.value);
-//         console.log(string);
-//         answer.value = eval(string);
-//     }
-
-// } )
